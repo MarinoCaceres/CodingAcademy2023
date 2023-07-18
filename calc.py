@@ -1,4 +1,7 @@
 op = input("What operation do you want to do (+,-,*,/): ")
+while op != "+" and op != "-" and op != "*" and op != "x" and op != "/":
+    print("That is not a valid operation")
+    op = input("Please insert a valid operation: ")
 
 while op == "+" or op == "-" or op == "*" or op == "x" or op == "/":
     
@@ -19,5 +22,7 @@ while op == "+" or op == "-" or op == "*" or op == "x" or op == "/":
             print("Cannot divide by 0")
         else:
             print("Result:",x/y)
-
-print("That is not a valid operation")
+    op = input("What operation do you want to do (+,-,*,/): ")
+    while op != "+" and op != "-" and op != "*" and op != "x" and op != "/":
+        print("That is not a valid operation")
+        op = input("Please insert a valid operation: ")
