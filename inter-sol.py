@@ -9,8 +9,8 @@ d = float(input("What is d: "))
 
 if a == c:
     print("There is no intersection between these two lines")
+
 else:
     x = (d-b)/(a-c)
     y = a*x+b
-
-print("The intersection point is:", (x,y))
+    print("The intersection point is:", (x,y))
