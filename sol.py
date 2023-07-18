@@ -5,10 +5,12 @@ a = float(input("What is a: "))
 b = float(input("What is b: "))
 c = float(input("What is c: "))
 
-d=(b**2-4*a*c)**(0.5)
+if a == 0:
+    print("That is not a Quadratic Equation")
 
-x1=(-b + d)/2*a
-x2=(-b - d)/2*a
-
-print("The first root is:",x1)
-print("The second root is:",x2)
+else:
+    d=(b**2-4*a*c)**(0.5)
+    x1=(-b + d)/2*a
+    x2=(-b - d)/2*a
+    print("The first root is:",x1)
+    print("The second root is:",x2)
