@@ -9,7 +9,7 @@ import random
 
 choice = ""
 guess = ""
-while choice != "n":
+while choice != "n" and guess != "q":
     rng = random.randrange(100)
     guesses = 0
     cheat = False
@@ -37,5 +37,5 @@ while choice != "n":
         print ("Nicely done mate, very cool. It took you",guesses,"guesses.")
         choice = input("Do you wish to play again? (y/n)")
 
-if choice == "n":
+if choice == "n" or guess == "q":
     print("Buh bye!")
