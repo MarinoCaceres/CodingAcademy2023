@@ -42,15 +42,17 @@ while choice != "n" and guess != "q":
             
     if cheat == True and guess != "q" and guess != "r" and guess != "s":
         guess = ""
+        guesses = 0
         rng = random.randrange(101)
         print("Did you cheat or something? It took you",guesses,"guesses.")
 
     elif guess != "q" and guess != "r" and guess != "s":
         guess = ""
+        guesses = 0
         rng = random.randrange(101)
         print ("Nicely done mate, very cool. It took you",guesses,"guesses.")
 
-    while choice != "n" and choice != "y" and guess != "q" and guess != "r" and guess != "s":
+    while choice != "n" and choice != "y" and guess != "q" and guess != "r" and guess != "s" and guess != "z":
         choice = input("Do you wish to play again? (y/n)")
 
 if choice == "n" or guess == "q":
