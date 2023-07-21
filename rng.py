@@ -13,6 +13,7 @@ rng = random.randrange(101)
 guesses = 0
 cheat = False
 while choice != "n" and guess != "q":
+    guesses = 0
     print("This is a guessing game where I choose a number between 0 and 100")
     while guess != rng and guess != "q" or guess == "r" or guess == "s":
         guess = (input("Guess what my secret number is: "))
@@ -42,17 +43,15 @@ while choice != "n" and guess != "q":
             
     if cheat == True and guess != "q" and guess != "r" and guess != "s":
         guess = ""
-        guesses = 0
         rng = random.randrange(101)
         print("Did you cheat or something? It took you",guesses,"guesses.")
 
     elif guess != "q" and guess != "r" and guess != "s":
         guess = ""
-        guesses = 0
         rng = random.randrange(101)
         print ("Nicely done mate, very cool. It took you",guesses,"guesses.")
 
-    while choice != "n" and choice != "y" and guess != "q" and guess != "r" and guess != "s" and guess != "z":
+    while choice != "n" and choice != "y" and guess != "q" and guess != "r" and guess != "s" and guess != "z" or guess == rng:
         choice = input("Do you wish to play again? (y/n)")
 
 if choice == "n" or guess == "q":
