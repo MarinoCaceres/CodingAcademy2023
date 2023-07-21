@@ -18,7 +18,7 @@ while choice != "n" and guess != "q":
         guess = (input("Guess what my secret number is: "))
         
         if guess == "s":
-            set = int(input("What number should be the range of my secret number: "))
+            set = int(input("What number should be the range of his secret number: "))
             rng = random.randrange(set)
             cheat = True
 
